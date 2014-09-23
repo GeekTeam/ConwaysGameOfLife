@@ -17,4 +17,17 @@ public class World {
 		livingCells.addAll(cells);
 	}
 
+	public boolean containsLivingCell(Cell cell) {
+
+		return livingCells.contains(cell);
+	}
+
+	public void evolve() {
+		livingCells.clear();
+	}
+
+	public boolean isEmpty() {
+		return livingCells.isEmpty();
+	}
+
 }
